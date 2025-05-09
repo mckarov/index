@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мои любимые города России</title>
+    <style>
+        body {
+            background-color: #f5deb3; /* sandy paper background */
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+            font-size: 2.5rem; /* Increased font size for the title */
+        }
+        .city-link {
+            margin: 20px;
+            display: flex; /* Changed to flex for side-by-side layout */
+            align-items: center; /* Center items vertically */
+            text-decoration: none;
+            color: #333;
+            opacity: 0; /* Start hidden */
+            transform: translateY(20px); /* Start slightly below */
+            animation: slideIn 0.5s forwards; /* Animation for sliding in */
+        }
+        .city-link img {
+            width: 300px; /* Increased image size */
+            height: auto;
+            border-radius: 10px;
+            margin-right: 20px; /* Space between image and text */
+            animation: slideOut 0.5s forwards; /* Animation for sliding out */
+        }
+        .city-link p {
+            margin-top: 0; /* Remove top margin for better alignment */
+            font-size: 1.5rem; /* Increased font size for city names */
+            animation: slideOut 0.5s forwards; /* Animation for sliding out */
+        }
+        @keyframes slideIn {
+            to {
+                opacity: 1; /* Fade in */
+                transform: translateY(0); /* Move to original position */
+            }
+        }
+        @keyframes slideOut {
+            to {
+                opacity: 1; /* Keep visible */
+                transform: translateY(0); /* Stay in position */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Мои любимые города России</h1>
+    <a href="yalta.html" class="city-link">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Yalta_%282733097088%29.jpg" alt="Ялта">
+        <p>Ялта</p>
+    </a>
+    <a href="orel.html" class="city-link">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/bb/Oryol2006.jpg" alt="Орёл">
+        <p>Орёл</p>
+    </a>
+    <a href="tambov.html" class="city-link">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Tambov_TransgfigurationCathedral_101_0477.jpg" alt="Тамбов">
+        <p>Тамбов</p>
+    </a>
+</body>
+</html>

@@ -1,0 +1,5 @@
+k = int(input("Enter K: "))
+q = int(input("Enter Q: "))
+mass = int(input("Enter mass: "))
+honk_bonus_value = max(500, (k + k * q * mass ** 0.2) / 3)
+print(honk_bonus_value)

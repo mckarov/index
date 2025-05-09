@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея городов России</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            gap: 20px;
+        }
+
+        .main-content {
+            flex: 2;
+        }
+
+        .sidebar {
+            flex: 1;
+            background-color: #e6e6e6;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .image-gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .image-gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        .sidebar a {
+            color: purple;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .sidebar a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Галерея городов России</h1>
+    </header>
+
+    <div class="container">
+        <div class="main-content">
+            <h2>Орёл</h2>
+            
+            <p>Орёл - город в России, административный центр Орловской области. Расположен на берегах реки Оки и её притока Орлика.</p>
+            
+            <p>Население: около 310,000 человек</p>
+            
+            <p>Основные достопримечательности:</p>
+            <ul>
+                <li>Богоявленский собор</li>
+                <li>Сквер Танкистов</li>
+                <li>Музей И.С. Тургенева</li>
+                <li>Военно-исторический музей</li>
+            </ul>
+
+            <div class="image-gallery">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/bb/Oryol2006.jpg" alt="Орёл">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Bogoyavlenskiy_sobor_in_Oryol.jpg/1280px-Bogoyavlenskiy_sobor_in_Oryol.jpg" alt="Богоявленский собор">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Oryol_Alexander_bridge.jpg/1280px-Oryol_Alexander_bridge.jpg" alt="Александровский мост">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Oryol_Drama_Theater.jpg/1280px-Oryol_Drama_Theater.jpg" alt="Драматический театр">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Oryol_Lenin_Square.jpg/1280px-Oryol_Lenin_Square.jpg" alt="Площадь Ленина">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Turgenev_Museum_Oryol.jpg/1280px-Turgenev_Museum_Oryol.jpg" alt="Музей Тургенева">
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <h3>Информация о Орле</h3>
+            <p>Орёл - это город с богатой историей и культурой. Здесь вы найдете множество интересных мест для посещения.</p>
+            <a href="https://ru.wikipedia.org/wiki/Орёл">Орёл на Википедии</a>
+            <a href="https://www.orel-adm.ru">Официальный сайт администрации Орла</a>
+            <a href="https://orel-region.ru">Новости Орла</a>
+            <a href="https://okmuseum.ru">Музеи Орловской области</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Города России. Все права защищены.</p>
+    </footer>
+</body>
+</html>
