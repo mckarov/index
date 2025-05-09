@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мои любимые города России</title>
+    <style>
+        body {
+            background-color: #005f5f; 
+            font-family: 'Arial', sans-serif;
+            display: flex; /* Use flexbox for layout */
+            padding: 0; /* Remove padding */
+            margin: 0; /* Remove margin */
+            justify-content: center; /* Center content horizontally */
+            align-items: flex-start; /* Align content to the top */
+            min-height: 100vh; /* Allow scrolling by using min-height */
+        }
+        .content {
+            flex: 1; /* Take remaining space */
+            padding: 20px;
+            text-align: center; /* Align text to the center */
+        }
+        h1 {
+            color: white; /* Changed text color to white */
+            font-size: 2.5rem; /* Increased font size for the title */
+            margin-top: 0; /* Remove top margin to move title upwards */
+        }
+        .info-panel {
+            background-color: rgba(173, 173, 173, 0.6); /* Half-transparent grey background */
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px; /* Space below the panel */
+            position: fixed; /* Fix position to the right */
+            right: 0; /* Align to the right */
+            top: 0; /* Align to the top */
+            height: 100%; /* Stretch through the whole height */
+            width: 250px; /* Set a fixed width */
+        }
+        .info-panel.left {
+            left: 0; /* Align to the left */
+            right: auto; /* Reset right alignment */
+        }
+        .city-link {
+            margin: 20px 0; /* Space between links */
+            display: flex; /* Changed to flex for side-by-side layout */
+            flex-direction: column; /* Stack image and text vertically */
+            align-items: center; /* Align items to the center */
+            text-decoration: none;
+            color: white; /* Changed text color to white */
+            opacity: 0; /* Start hidden */
+            transform: translateY(20px); /* Start slightly below */
+            animation: slideIn 0.5s forwards; /* Animation for sliding in */
+        }
+        .city-link img {
+            width: 300px; /* Increased image size */
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 10px; /* Space between image and text */
+            animation: slideOut 0.5s forwards; /* Animation for sliding out */
+            transition: transform 0.3s ease; /* Transition for hover effect */
+        }
+        .city-link img:hover {
+            transform: scale(1.05); /* Scale image on hover */
+        }
+        .city-link p {
+            margin-top: 0; /* Remove top margin for better alignment */
+            font-size: 1.5rem; /* Increased font size for city names */
+            font-family: 'Georgia', serif; /* Changed to a curvier font */
+            animation: slideOut 0.5s forwards; /* Animation for sliding out */
+            background-color: black; /* Black background for text */
+            color: white; /* White text color */
+            padding: 10px; /* Padding around text */
+            border-radius: 10px; /* Rounded corners */
+            width: 300px; /* Match the width of the image */
+            text-align: center; /* Align text to the center */
+        }
+        @keyframes slideIn {
+            to {
+                opacity: 1; /* Fade in */
+                transform: translateY(0); /* Move to original position */
+            }
+        }
+        @keyframes slideOut {
+            to {
+                opacity: 1; /* Keep visible */
+                transform: translateY(0); /* Stay in position */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="info-panel left">
+        <p>«Не думай о том, что будешь рассказывать, когда вернешься. Время — это здесь и сейчас. Лови момент.»</p>
+        <p style="text-align: right;">- Пауло Коэльо</p>
+        <p>«Я... ну вобщем много где был, но там прям капец вкусненько....»</p>
+        <p style="text-align: right;">- Павел Никулин</p>
+    </div>
+    <div class="info-panel">
+        <p>Этот сайт был создан для сдачи самматива по Информатике, для моего личного развития и выражения моего мнения по поводу рейтинга городов России. Спасибо за посещение!</p>
+        <p style="text-align: right;">- Макаров Н.К.</p>
+    </div>
+    <div class="content">
+        <h1>Мои любимые города России</h1>
+        <a href="yalta.html" class="city-link">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Yalta_%282733097088%29.jpg" alt="Ялта">
+            <p>Ялта</p>
+        </a>
+        <a href="orel.html" class="city-link">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/bb/Oryol2006.jpg" alt="Орёл">
+            <p>Орёл</p>
+        </a>
+        <a href="tambov.html" class="city-link">
+            <img src="https://media-cdn.tripadvisor.com/media/photo-s/08/a0/ff/58/caption.jpg" alt="Тамбов">
+            <p>Тамбов</p>
+        </a>
+    </div>
+</body>
+</html>
